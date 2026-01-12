@@ -8,11 +8,19 @@ import skinService from "./assets/skincare.jpg";
 import handService from "./assets/hand-feet.jpg";
 import lashesBrowsService from "./assets/lashes-brows.jpg";
 import waxingService from "./assets/waxing.jpg";
+import bridalPackage from "./assets/bridal-package.jpg"
+import airbrush from "./assets/airbrush.jpg"
+import glam from "./assets/glam.jpg"
+import glam1 from "./assets/glam (1).jpg"
+import trailBridal from "./assets/trial-brial.jpg"
+import partyMakeup from "./assets/party-makeup.jpg"
+import hairstyling from "./assets/hairstyling.jpg"
+import softnatural from "./assets/soft-natural.jpg"
 export default function App() {
   return (
     <>
       {/* NAVBAR START */}
-      <nav className="bg-[#E89DAE] fixed w-full z-20 top-0 start-0 text-black">
+      <nav className="bg-[#E89DAE] fixed w-full z-20 top-0 start-0 text-black backdrop-blur-xl bg-pink-200\/30 border border-white/30 shadow-lg">
         <div className="max-w-7xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a
             href="https://flowbite.com/"
@@ -143,10 +151,10 @@ export default function App() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="services"
                   className="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent hover:border-b"
                 >
-                  About
+                  Services
                 </a>
               </li>
               <li>
@@ -154,7 +162,7 @@ export default function App() {
                   href="#"
                   className="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent hover:border-b"
                 >
-                  Services
+                  Makeup Pricing
                 </a>
               </li>
             </ul>
@@ -344,6 +352,364 @@ export default function App() {
         </div>
       </section>
       {/* SERVICES SECTION END */}
+      {/* MAKEUP PRICING SECTION START */}
+      <section className="text-gray-600 body-font bg-[#E89DAE]" id="services">
+        <div className="container px-5 py-12 mx-auto">
+          <h1 className="text-center mb-10 lg:text-5xl md:text-4xl text-2xl text-black">
+            Makeup Pricing
+          </h1>
+          <div className="flex flex-wrap -m-4">
+            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a className="block relative h-48 rounded overflow-hidden">
+                <img
+                  alt="Bridal Package"
+                  className="object-cover object-center w-full h-full block"
+                  src={bridalPackage}
+                />
+              </a>
+              <div className="mt-4">
+                <h2 className="text-gray-900 title-font text-lg font-medium">
+                  Bridal Package (3 days)
+                </h2>
+                <h3 className="text-gray-500 text-md tracking-widest title-font mb-1">
+                  Mehndi, Barat, Valima
+                </h3>
+                <div className="flex items-center justify-between mt-2">
+                  <p className="text-black text-xl font-semibold">$850.00</p>
+
+                  <button className="px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-lg hover:bg-pink-700 transition">
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a className="block relative h-48 rounded overflow-hidden">
+                <img
+                  alt="Airbrush Makeup"
+                  className="object-cover object-center w-full h-full block"
+                  src={airbrush}
+                />
+              </a>
+              <div className="mt-4">
+                <h2 className="text-gray-900 title-font text-lg font-medium">
+                  Airbrush Makeup (1 day)
+                </h2>
+                <h3 className="text-gray-500 text-md tracking-widest title-font mb-1">
+                  Any Event
+                </h3>
+                <div className="flex items-center justify-between mt-2">
+                  <p className="text-black text-xl font-semibold">$850.00</p>
+
+                  <button className="px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-lg hover:bg-pink-700 transition">
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a className="block relative h-48 rounded overflow-hidden">
+                <img
+                  alt="Glam Makeup"
+                  className="object-cover object-center w-full h-full block"
+                  src={glam1}
+                />
+              </a>
+              <div className="mt-4">
+                <h2 className="text-gray-900 title-font text-lg font-medium">
+                  Glam Makeup (1 day)
+                </h2>
+                <h3 className="text-gray-500 text-md tracking-widest title-font mb-1">
+                  Any Event
+                </h3>
+                <div className="flex items-center justify-between mt-2">
+                  <p className="text-black text-xl font-semibold">$250.00</p>
+                  <button className="px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-lg hover:bg-pink-700 transition">
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a className="block relative h-48 rounded overflow-hidden">
+                <img
+                  alt="Makeup Trail Bridal "
+                  className="object-cover object-center w-full h-full block"
+                  src={trailBridal}
+                />
+              </a>
+              <div className="mt-4">
+                <h2 className="text-gray-900 title-font text-lg font-medium">
+                  Makeup Trail Bridal 
+                </h2>
+                <h3 className="text-gray-500 text-md tracking-widest title-font mb-1">
+                  Mehndi, Barat, Valima (1 look)
+                </h3>
+                <div className="flex items-center justify-between mt-2">
+                  <p className="text-black text-xl font-semibold">$350.00</p>
+
+                  <button className="px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-lg hover:bg-pink-700 transition">
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a className="block relative h-48 rounded overflow-hidden">
+                <img
+                  alt="Party Makeup"
+                  className="object-cover object-center w-full h-full block"
+                  src={partyMakeup}
+                />
+              </a>
+              <div className="mt-4">
+                <h2 className="text-gray-900 title-font text-lg font-medium">
+                  Party Makeup (1 day)
+                </h2>
+                <h3 className="text-gray-500 text-md tracking-widest title-font mb-1">
+                  Any Event
+                </h3>
+                <div className="flex items-center justify-between mt-2">
+                  <p className="text-black text-xl font-semibold">$400.00</p>
+
+                  <button className="px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-lg hover:bg-pink-700 transition">
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a className="block relative h-48 rounded overflow-hidden">
+                <img
+                  alt="Hairstyling"
+                  className="object-cover object-center w-full h-full block"
+                  src={hairstyling}
+                />
+              </a>
+              <div className="mt-4">
+                <h2 className="text-gray-900 title-font text-lg font-medium">
+                  Hairstyling
+                </h2>
+                <h3 className="text-gray-500 text-md tracking-widest title-font mb-1">
+                 Any look (Extra charge for flowers)
+                </h3>
+                <div className="flex items-center justify-between mt-2">
+                  <p className="text-black text-xl font-semibold">$150.00</p>
+
+                  <button className="px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-lg hover:bg-pink-700 transition">
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a className="block relative h-48 rounded overflow-hidden">
+                <img
+                  alt="Soft Natural Makeup"
+                  className="object-cover object-center w-full h-full block"
+                  src={softnatural}
+                />
+              </a>
+              <div className="mt-4">
+                <h2 className="text-gray-900 title-font text-lg font-medium">
+                  Soft Natural Makeup (1 day)
+                </h2>
+                <h3 className="text-gray-500 text-md tracking-widest title-font mb-1">
+                  Any Event 
+                </h3>
+                <div className="flex items-center justify-between mt-2">
+                  <p className="text-black text-xl font-semibold">$325.00</p>
+
+                  <button className="px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-lg hover:bg-pink-700 transition">
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+      {/* MAKEUP PRICING SECTION END */}
+      {/* HAIR PRICING SECTION START */}
+      <section className="text-gray-600 body-font ">
+        <div className="container px-5 py-12 mx-auto">
+          <h1 className="text-center mb-10 lg:text-5xl md:text-4xl text-2xl text-black">
+            Hair Pricing
+          </h1>
+          <div className="flex flex-wrap -m-4">
+            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a className="block relative h-48 rounded overflow-hidden">
+                <img
+                  alt="ecommerce"
+                  className="object-cover object-center w-full h-full block"
+                  src="https://dummyimage.com/420x260"
+                />
+              </a>
+              <div className="mt-4">
+                <h2 className="text-gray-900 title-font text-lg font-medium">
+                  Bridal Package (3 days)
+                </h2>
+                <h3 className="text-gray-500 text-md tracking-widest title-font mb-1">
+                  Mehndi, Barat, Valima
+                </h3>
+                <div className="flex items-center justify-between mt-2">
+                  <p className="text-black text-xl font-semibold">$850.00</p>
+
+                  <button className="px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-lg hover:bg-pink-700 transition">
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a className="block relative h-48 rounded overflow-hidden">
+                <img
+                  alt="ecommerce"
+                  className="object-cover object-center w-full h-full block"
+                  src="https://dummyimage.com/421x261"
+                />
+              </a>
+              <div className="mt-4">
+                <h2 className="text-gray-900 title-font text-lg font-medium">
+                  Airbrush Makeup (1 day)
+                </h2>
+                <h3 className="text-gray-500 text-md tracking-widest title-font mb-1">
+                  Any Event
+                </h3>
+                <div className="flex items-center justify-between mt-2">
+                  <p className="text-black text-xl font-semibold">$850.00</p>
+
+                  <button className="px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-lg hover:bg-pink-700 transition">
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a className="block relative h-48 rounded overflow-hidden">
+                <img
+                  alt="ecommerce"
+                  className="object-cover object-center w-full h-full block"
+                  src="https://dummyimage.com/422x262"
+                />
+              </a>
+              <div className="mt-4">
+                <h2 className="text-gray-900 title-font text-lg font-medium">
+                  Glam Makeup (1 day)
+                </h2>
+                <h3 className="text-gray-500 text-md tracking-widest title-font mb-1">
+                  Any Event
+                </h3>
+                <div className="flex items-center justify-between mt-2">
+                  <p className="text-black text-xl font-semibold">$250.00</p>
+                  <button className="px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-lg hover:bg-pink-700 transition">
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a className="block relative h-48 rounded overflow-hidden">
+                <img
+                  alt="ecommerce"
+                  className="object-cover object-center w-full h-full block"
+                  src="https://dummyimage.com/423x263"
+                />
+              </a>
+              <div className="mt-4">
+                <h2 className="text-gray-900 title-font text-lg font-medium">
+                  Makeup Trail Bridal 
+                </h2>
+                <h3 className="text-gray-500 text-md tracking-widest title-font mb-1">
+                  Mehndi, Barat, Valima (1 look)
+                </h3>
+                <div className="flex items-center justify-between mt-2">
+                  <p className="text-black text-xl font-semibold">$350.00</p>
+
+                  <button className="px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-lg hover:bg-pink-700 transition">
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a className="block relative h-48 rounded overflow-hidden">
+                <img
+                  alt="ecommerce"
+                  className="object-cover object-center w-full h-full block"
+                  src="https://dummyimage.com/424x264"
+                />
+              </a>
+              <div className="mt-4">
+                <h2 className="text-gray-900 title-font text-lg font-medium">
+                  Party Makeup (1 day)
+                </h2>
+                <h3 className="text-gray-500 text-md tracking-widest title-font mb-1">
+                  Any Event
+                </h3>
+                <div className="flex items-center justify-between mt-2">
+                  <p className="text-black text-xl font-semibold">$400.00</p>
+
+                  <button className="px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-lg hover:bg-pink-700 transition">
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a className="block relative h-48 rounded overflow-hidden">
+                <img
+                  alt="ecommerce"
+                  className="object-cover object-center w-full h-full block"
+                  src="https://dummyimage.com/425x265"
+                />
+              </a>
+              <div className="mt-4">
+                <h2 className="text-gray-900 title-font text-lg font-medium">
+                  Just Hairstyling
+                </h2>
+                <h3 className="text-gray-500 text-md tracking-widest title-font mb-1">
+                 Any look (Extra charge for flowers)
+                </h3>
+                <div className="flex items-center justify-between mt-2">
+                  <p className="text-black text-xl font-semibold">$150.00</p>
+
+                  <button className="px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-lg hover:bg-pink-700 transition">
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a className="block relative h-48 rounded overflow-hidden">
+                <img
+                  alt="ecommerce"
+                  className="object-cover object-center w-full h-full block"
+                  src="https://dummyimage.com/427x267"
+                />
+              </a>
+              <div className="mt-4">
+                <h2 className="text-gray-900 title-font text-lg font-medium">
+                  Soft Natural Makeup (1 day)
+                </h2>
+                <h3 className="text-gray-500 text-md tracking-widest title-font mb-1">
+                  Any Event 
+                </h3>
+                <div className="flex items-center justify-between mt-2">
+                  <p className="text-black text-xl font-semibold">$325.00</p>
+
+                  <button className="px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-lg hover:bg-pink-700 transition">
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+      {/* HAIR PRICING SECTION END */}
     </>
   );
 }
