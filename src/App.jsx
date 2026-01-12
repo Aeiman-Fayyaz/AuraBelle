@@ -1,8 +1,13 @@
 import React from "react";
 import "./App.css";
-import logo from "./assets/Beige.png";
 import heroBanner from "./assets/hero-banner.png";
-
+import bridalService from "./assets/bridal.jpg";
+import makeupService from "./assets/makeup.jpg";
+import hairService from "./assets/hair.jpg";
+import skinService from "./assets/skincare.jpg";
+import handService from "./assets/hand-feet.jpg";
+import lashesBrowsService from "./assets/lashes-brows.jpg";
+import waxingService from "./assets/waxing.jpg";
 export default function App() {
   return (
     <>
@@ -34,14 +39,14 @@ export default function App() {
               >
                 <path
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeWidth="2"
                   d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"
                 />
               </svg>
               <span className="sr-only">Search</span>
             </button>
-            <label for="input-group-1" className="sr-only">
+            <label htmlFor="input-group-1" className="sr-only">
               Your Email
             </label>
             <div className="relative hidden md:block">
@@ -57,8 +62,8 @@ export default function App() {
                 >
                   <path
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeWidth="2"
                     d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"
                   />
                 </svg>
@@ -89,8 +94,8 @@ export default function App() {
               >
                 <path
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeWidth="2"
                   d="M5 7h14M5 12h14M5 17h14"
                 />
               </svg>
@@ -113,8 +118,8 @@ export default function App() {
                 >
                   <path
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeWidth="2"
                     d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"
                   />
                 </svg>
@@ -164,11 +169,181 @@ export default function App() {
           alt="Banner"
           className="w-full h-full object-contain"
         />
-
-        
       </div>
-
       {/* HERO BANNER END */}
+      {/* SERVICES SECTION START */}
+      <section className="text-gray-600 body-font">
+        <div className="container px-5 py-24 mx-auto">
+          <div className="flex flex-col text-center w-full mb-20">
+            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
+              Luxury Beauty Services, Tailored for You
+            </h1>
+            <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
+              We offer a complete range of professional beauty services designed
+              to enhance your natural beauty. From flawless makeup and expert
+              hair styling to relaxing facials and bridal packages, our
+              experienced team uses high-quality products and modern techniques
+              to deliver exceptional results. Your comfort, confidence, and
+              satisfaction are always our top priority.
+            </p>
+          </div>
+          <div className="flex flex-wrap -m-4">
+            <div className="lg:w-1/3 sm:w-1/2 p-4">
+              <div className="flex relative">
+                <img
+                  alt="Bridal Service"
+                  className="absolute inset-0 w-full h-full object-cover object-center rounded-xl"
+                  src={bridalService}
+                />
+                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 rounded-xl bg-[#e89dafbf] opacity-0 hover:opacity-100">
+                  <h1 className="title-font text-xl font-medium text-gray-900 mb-3">
+                    Bridal Services
+                  </h1>
+                  <p className="leading-relaxed">
+                    We serve{" "}
+                    <b>
+                      Bridal Makeup, Mehndi Makeup, Baraat Makeup, Walima
+                      Makeup, Bridal Hairstyle, Dupatta Setting, Jewelry
+                      Setting, Customized Bridal Packages
+                    </b>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="lg:w-1/3 sm:w-1/2 p-4">
+              <div className="flex relative">
+                <img
+                  alt="Makeup Service"
+                  className="absolute inset-0 w-full h-full object-cover object-center rounded-xl"
+                  src={makeupService}
+                />
+                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 rounded-xl bg-[#e89dafbf] opacity-0 hover:opacity-100">
+                  <h1 className="title-font text-xl font-medium text-gray-900 mb-3">
+                    Makeup Services
+                  </h1>
+                  <p className="leading-relaxed">
+                    We serve{" "}
+                    <b>
+                      Party Makeup, Engagement Makeup, Airbrush Makeup, Soft /
+                      Natural Makeup, Glam Makeup, Makeup Trial (Bridal)
+                    </b>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="lg:w-1/3 sm:w-1/2 p-4">
+              <div className="flex relative">
+                <img
+                  alt="Hair Service"
+                  className="absolute inset-0 w-full h-full object-cover object-center rounded-xl"
+                  src={hairService}
+                />
+                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 rounded-xl bg-[#e89dafbf] opacity-0 hover:opacity-100">
+                  <h1 className="title-font text-xl font-medium text-gray-900 mb-3">
+                    Hair Service
+                  </h1>
+                  <p className="leading-relaxed">
+                    We serve{" "}
+                    <b>
+                      Hair Cut (Layer, Bob, Step, U-Cut, V-Cut), Hair Styling
+                      (Straight, Curls, Waves), Blow Dry, Hair Wash, Hair
+                      Coloring, Highlights / Lowlights
+                    </b>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="lg:w-1/3 sm:w-1/2 p-4">
+              <div className="flex relative">
+                <img
+                  alt="Skincare & Facial Service "
+                  className="absolute inset-0 w-full h-full object-cover object-center rounded-xl"
+                  src={skinService}
+                />
+                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 rounded-xl bg-[#e89dafbf] opacity-0 hover:opacity-100">
+                  <h1 className="title-font text-xl font-medium text-gray-900 mb-3">
+                    Skincare & Facial Service
+                  </h1>
+                  <p className="leading-relaxed">
+                    We serve{" "}
+                    <b>
+                      Basic Facial, Gold Facial, Diamond Facial, Pearl Facial,
+                      Hydra Facial, Clean-Up, Skin Polishing, Acne Treatment,
+                      Under Eye Treatment
+                    </b>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="lg:w-1/3 sm:w-1/2 p-4">
+              <div className="flex relative">
+                <img
+                  alt="Hands & Feet Care"
+                  className="absolute inset-0 w-full h-full object-cover object-center rounded-xl"
+                  src={handService}
+                />
+                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 rounded-xl bg-[#e89dafbf] opacity-0 hover:opacity-100">
+                  <h1 className="title-font text-xl font-medium text-gray-900 mb-3">
+                    Hands & Feet Care
+                  </h1>
+                  <p className="leading-relaxed">
+                    We serve{" "}
+                    <b>
+                      Manicure Pedicure, Spa Manicure, Spa Pedicure, Paraffin
+                      Wax, Nail Cutting & Shaping, Nail Art, Gel Nails, Acrylic
+                      Nails, French Tips
+                    </b>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="lg:w-1/3 sm:w-1/2 p-4">
+              <div className="flex relative">
+                <img
+                  alt="Lashes & Brows Service"
+                  className="absolute inset-0 w-full h-full object-cover object-center rounded-xl"
+                  src={lashesBrowsService}
+                />
+                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 rounded-xl bg-[#e89dafbf] opacity-0 hover:opacity-100">
+                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
+                    Lashes & Brows Service
+                  </h1>
+                  <p className="leading-relaxed">
+                    We serve{" "}
+                    <b>
+                      Full Body Wax, Arms & Legs Wax, Face Wax, Brazilian Wax,
+                      Bikini Wax, Threading (Eyebrows, Upper Lip, Chin), Face
+                      Threading, Laser Hair Removal
+                    </b>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="lg:w-1/3 sm:w-1/2 p-4">
+              <div className="flex relative">
+                <img
+                  alt="Waxing & Hair Removal"
+                  className="absolute inset-0 w-full h-full object-cover object-center rounded-xl"
+                  src={waxingService}
+                />
+                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 rounded-xl bg-[#e89dafbf] opacity-0 hover:opacity-100">
+                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
+                    Waxing & Hair Removal
+                  </h1>
+                  <p className="leading-relaxed">
+                    We serve{" "}
+                    <b>
+                      Eyelash Extensions, Lash Lifting, Lash Tinting, Brow
+                      Shaping, Brow Tinting, Microblading / Brow Lamination
+                    </b>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* SERVICES SECTION END */}
     </>
   );
 }
