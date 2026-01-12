@@ -158,7 +158,7 @@ export default function App() {
       </nav>
       {/* NAVBAR END */}
       {/* HERO BANNER START */}
-      <div className="relative w-full min-h-\[300px\] md\:min-h-\[500px\] flex items-center justify-center">
+      <div className="relative w-full min-h-\[300px\] md\:min-h-\[500px\] md:pt-5 pt-18 flex items-center justify-center">
         <img
           src={heroBanner}
           alt="Banner"
