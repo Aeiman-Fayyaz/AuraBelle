@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+.logo{
+    font-family: "Meow Script", cursive;
+    font-size: 40px;
+    font-weight: bold;
+}
+input{
+    border-radius: 50px;
+    outline: none;
+}
