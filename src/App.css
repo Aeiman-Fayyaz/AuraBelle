@@ -9,3 +9,6 @@ input{
     border-radius: 50px;
     outline: none;
 }
+body{
+    font-family: "Quicksand", sans-serif;
+}

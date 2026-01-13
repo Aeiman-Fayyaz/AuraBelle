@@ -1,4 +1,7 @@
 import React from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 import "./App.css";
 import heroBanner from "./assets/hero-banner.png";
 import bridalService from "./assets/bridal.jpg";
@@ -8,19 +11,47 @@ import skinService from "./assets/skincare.jpg";
 import handService from "./assets/hand-feet.jpg";
 import lashesBrowsService from "./assets/lashes-brows.jpg";
 import waxingService from "./assets/waxing.jpg";
-import bridalPackage from "./assets/bridal-package.jpg"
-import airbrush from "./assets/airbrush.jpg"
-import glam from "./assets/glam.jpg"
-import glam1 from "./assets/glam (1).jpg"
-import trailBridal from "./assets/trial-brial.jpg"
-import partyMakeup from "./assets/party-makeup.jpg"
-import hairstyling from "./assets/hairstyling.jpg"
-import softnatural from "./assets/soft-natural.jpg"
+import bridalPackage from "./assets/bridal-package.jpg";
+import airbrush from "./assets/airbrush.jpg";
+import glam from "./assets/glam.jpg";
+import trailBridal from "./assets/trial-brial.jpg";
+import partyMakeup from "./assets/party-makeup.jpg";
+import hairstyling from "./assets/hairstyling.jpg";
+import softnatural from "./assets/soft-natural.jpg";
+import hairCutting from "./assets/hair-cutting.jpg";
+import hairStyle from "./assets/hair-styling.jpg";
+import blowDry from "./assets/blowdry.jpg";
+import hairWash from "./assets/hair-wash.jpg";
+import hairDying from "./assets/hair-dying.jpg";
+import highlights from "./assets/highlights.jpg";
+import basicfacial from "./assets/basic-facial.jpg";
+import goldFacial from "./assets/gold-facial.jpg";
+import diamondFacial from "./assets/diamond-facial.jpg";
+import hydraFacial from "./assets/hydra-facial.jpg";
+import acneTreatment from "./assets/acne-treatment.jpg";
+import undereyeTreatment from "./assets/undereye-treatment.jpg";
+import meniPedi from "./assets/menipedi.jpg";
+import nailShaping from "./assets/nail-shaping.jpg";
+import nailArt from "./assets/nail-art.jpg";
+import fullBodyWax from "./assets/fullBody-wax.jpg";
+import armWax from "./assets/arm-wax.jpg";
+import faceWax from "./assets/face-wax.jpg";
+import threading from "./assets/threading.jpg";
+import instaLogo from "./assets/insta-logo.jpg";
+import facebookLogo from "./assets/facebook-logo.jpg";
+import whatsappLogo from "./assets/whatsapp-logo.jpg";
 export default function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+      easing: "ease-in-out",
+    });
+  }, []);
   return (
     <>
       {/* NAVBAR START */}
-      <nav className="bg-[#E89DAE] fixed w-full z-20 top-0 start-0 text-black backdrop-blur-xl bg-pink-200\/30 border border-white/30 shadow-lg">
+      <nav className="bg-[#E89DAE] fixed w-full z-20 top-0 start-0 text-black backdrop-blur-7xl bg-pink-200\/30 border border-white/30 shadow-2xl">
         <div className="max-w-7xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a
             href="https://flowbite.com/"
@@ -162,7 +193,47 @@ export default function App() {
                   href="#"
                   className="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent hover:border-b"
                 >
-                  Makeup Pricing
+                  Makeup
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent hover:border-b"
+                >
+                  Hair
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent hover:border-b"
+                >
+                  Skincare & Facial
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent hover:border-b"
+                >
+                  Hand & Feet
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent hover:border-b"
+                >
+                  Waxing
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent hover:border-b"
+                >
+                  Contact
                 </a>
               </li>
             </ul>
@@ -182,7 +253,10 @@ export default function App() {
       {/* SERVICES SECTION START */}
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
-          <div className="flex flex-col text-center w-full mb-20">
+          <div
+            className="flex flex-col text-center w-full mb-20"
+            data-aos="fade-up"
+          >
             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
               Luxury Beauty Services, Tailored for You
             </h1>
@@ -196,7 +270,7 @@ export default function App() {
             </p>
           </div>
           <div className="flex flex-wrap -m-4">
-            <div className="lg:w-1/3 sm:w-1/2 p-4">
+            <div className="lg:w-1/3 sm:w-1/2 p-4" data-aos="zoom-in">
               <div className="flex relative">
                 <img
                   alt="Bridal Service"
@@ -218,7 +292,7 @@ export default function App() {
                 </div>
               </div>
             </div>
-            <div className="lg:w-1/3 sm:w-1/2 p-4">
+            <div className="lg:w-1/3 sm:w-1/2 p-4" data-aos="zoom-in">
               <div className="flex relative">
                 <img
                   alt="Makeup Service"
@@ -239,7 +313,7 @@ export default function App() {
                 </div>
               </div>
             </div>
-            <div className="lg:w-1/3 sm:w-1/2 p-4">
+            <div className="lg:w-1/3 sm:w-1/2 p-4" data-aos="zoom-in">
               <div className="flex relative">
                 <img
                   alt="Hair Service"
@@ -261,7 +335,7 @@ export default function App() {
                 </div>
               </div>
             </div>
-            <div className="lg:w-1/3 sm:w-1/2 p-4">
+            <div className="lg:w-1/3 sm:w-1/2 p-4" data-aos="zoom-in">
               <div className="flex relative">
                 <img
                   alt="Skincare & Facial Service "
@@ -283,7 +357,7 @@ export default function App() {
                 </div>
               </div>
             </div>
-            <div className="lg:w-1/3 sm:w-1/2 p-4">
+            <div className="lg:w-1/3 sm:w-1/2 p-4" data-aos="zoom-in">
               <div className="flex relative">
                 <img
                   alt="Hands & Feet Care"
@@ -305,29 +379,7 @@ export default function App() {
                 </div>
               </div>
             </div>
-            <div className="lg:w-1/3 sm:w-1/2 p-4">
-              <div className="flex relative">
-                <img
-                  alt="Lashes & Brows Service"
-                  className="absolute inset-0 w-full h-full object-cover object-center rounded-xl"
-                  src={lashesBrowsService}
-                />
-                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 rounded-xl bg-[#e89dafbf] opacity-0 hover:opacity-100">
-                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                    Lashes & Brows Service
-                  </h1>
-                  <p className="leading-relaxed">
-                    We serve{" "}
-                    <b>
-                      Full Body Wax, Arms & Legs Wax, Face Wax, Brazilian Wax,
-                      Bikini Wax, Threading (Eyebrows, Upper Lip, Chin), Face
-                      Threading, Laser Hair Removal
-                    </b>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="lg:w-1/3 sm:w-1/2 p-4">
+            <div className="lg:w-1/3 sm:w-1/2 p-4" data-aos="zoom-in">
               <div className="flex relative">
                 <img
                   alt="Waxing & Hair Removal"
@@ -341,8 +393,8 @@ export default function App() {
                   <p className="leading-relaxed">
                     We serve{" "}
                     <b>
-                      Eyelash Extensions, Lash Lifting, Lash Tinting, Brow
-                      Shaping, Brow Tinting, Microblading / Brow Lamination
+                      Full Body Wax, Arms & Legs Wax, Face Wax, Brazilian Wax,
+                      Bikini Wax, Threading, Face Threading, Laser Hair Removal
                     </b>
                   </p>
                 </div>
@@ -355,11 +407,18 @@ export default function App() {
       {/* MAKEUP PRICING SECTION START */}
       <section className="text-gray-600 body-font bg-[#E89DAE]" id="services">
         <div className="container px-5 py-12 mx-auto">
-          <h1 className="text-center mb-10 lg:text-5xl md:text-4xl text-2xl text-black">
-            Makeup Pricing
+          <h1
+            className="text-center mb-10 lg:text-5xl md:text-4xl text-2xl text-black"
+            data-aos="fade-up"
+          >
+            Makeup
           </h1>
           <div className="flex flex-wrap -m-4">
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <div
+              className="lg:w-1/4 md:w-1/2 p-4 w-full"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
               <a className="block relative h-48 rounded overflow-hidden">
                 <img
                   alt="Bridal Package"
@@ -377,13 +436,17 @@ export default function App() {
                 <div className="flex items-center justify-between mt-2">
                   <p className="text-black text-xl font-semibold">$850.00</p>
 
-                  <button className="px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-lg hover:bg-pink-700 transition">
+                  <button className="px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-lg hover:bg-transparent hover:text-pink-600 hover:border-2 hover:border-pink-600 transition">
                     Book Now
                   </button>
                 </div>
               </div>
             </div>
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <div
+              className="lg:w-1/4 md:w-1/2 p-4 w-full"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
               <a className="block relative h-48 rounded overflow-hidden">
                 <img
                   alt="Airbrush Makeup"
@@ -401,18 +464,22 @@ export default function App() {
                 <div className="flex items-center justify-between mt-2">
                   <p className="text-black text-xl font-semibold">$850.00</p>
 
-                  <button className="px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-lg hover:bg-pink-700 transition">
+                  <button className="px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-lg hover:bg-transparent hover:text-pink-600 hover:border-2 hover:border-pink-600 transition">
                     Book Now
                   </button>
                 </div>
               </div>
             </div>
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <div
+              className="lg:w-1/4 md:w-1/2 p-4 w-full"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
               <a className="block relative h-48 rounded overflow-hidden">
                 <img
                   alt="Glam Makeup"
                   className="object-cover object-center w-full h-full block"
-                  src={glam1}
+                  src={glam}
                 />
               </a>
               <div className="mt-4">
@@ -424,13 +491,17 @@ export default function App() {
                 </h3>
                 <div className="flex items-center justify-between mt-2">
                   <p className="text-black text-xl font-semibold">$250.00</p>
-                  <button className="px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-lg hover:bg-pink-700 transition">
+                  <button className="px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-lg hover:bg-transparent hover:text-pink-600 hover:border-2 hover:border-pink-600 transition">
                     Book Now
                   </button>
                 </div>
               </div>
             </div>
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <div
+              className="lg:w-1/4 md:w-1/2 p-4 w-full"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
               <a className="block relative h-48 rounded overflow-hidden">
                 <img
                   alt="Makeup Trail Bridal "
@@ -440,7 +511,7 @@ export default function App() {
               </a>
               <div className="mt-4">
                 <h2 className="text-gray-900 title-font text-lg font-medium">
-                  Makeup Trail Bridal 
+                  Makeup Trail Bridal
                 </h2>
                 <h3 className="text-gray-500 text-md tracking-widest title-font mb-1">
                   Mehndi, Barat, Valima (1 look)
@@ -448,13 +519,17 @@ export default function App() {
                 <div className="flex items-center justify-between mt-2">
                   <p className="text-black text-xl font-semibold">$350.00</p>
 
-                  <button className="px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-lg hover:bg-pink-700 transition">
+                  <button className="px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-lg hover:bg-transparent hover:text-pink-600 hover:border-2 hover:border-pink-600 transition">
                     Book Now
                   </button>
                 </div>
               </div>
             </div>
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <div
+              className="lg:w-1/4 md:w-1/2 p-4 w-full"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
               <a className="block relative h-48 rounded overflow-hidden">
                 <img
                   alt="Party Makeup"
@@ -472,13 +547,17 @@ export default function App() {
                 <div className="flex items-center justify-between mt-2">
                   <p className="text-black text-xl font-semibold">$400.00</p>
 
-                  <button className="px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-lg hover:bg-pink-700 transition">
+                  <button className="px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-lg hover:bg-transparent hover:text-pink-600 hover:border-2 hover:border-pink-600 transition">
                     Book Now
                   </button>
                 </div>
               </div>
             </div>
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <div
+              className="lg:w-1/4 md:w-1/2 p-4 w-full"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
               <a className="block relative h-48 rounded overflow-hidden">
                 <img
                   alt="Hairstyling"
@@ -491,18 +570,22 @@ export default function App() {
                   Hairstyling
                 </h2>
                 <h3 className="text-gray-500 text-md tracking-widest title-font mb-1">
-                 Any look (Extra charge for flowers)
+                  Any look (Extra charge for flowers)
                 </h3>
                 <div className="flex items-center justify-between mt-2">
                   <p className="text-black text-xl font-semibold">$150.00</p>
 
-                  <button className="px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-lg hover:bg-pink-700 transition">
+                  <button className="px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-lg hover:bg-transparent hover:text-pink-600 hover:border-2 hover:border-pink-600 transition">
                     Book Now
                   </button>
                 </div>
               </div>
             </div>
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <div
+              className="lg:w-1/4 md:w-1/2 p-4 w-full"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
               <a className="block relative h-48 rounded overflow-hidden">
                 <img
                   alt="Soft Natural Makeup"
@@ -515,18 +598,17 @@ export default function App() {
                   Soft Natural Makeup (1 day)
                 </h2>
                 <h3 className="text-gray-500 text-md tracking-widest title-font mb-1">
-                  Any Event 
+                  Any Event
                 </h3>
                 <div className="flex items-center justify-between mt-2">
                   <p className="text-black text-xl font-semibold">$325.00</p>
 
-                  <button className="px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-lg hover:bg-pink-700 transition">
+                  <button className="px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-lg hover:bg-transparent hover:text-pink-600 hover:border-2 hover:border-pink-600 transition">
                     Book Now
                   </button>
                 </div>
               </div>
             </div>
-            
           </div>
         </div>
       </section>
@@ -534,182 +616,772 @@ export default function App() {
       {/* HAIR PRICING SECTION START */}
       <section className="text-gray-600 body-font ">
         <div className="container px-5 py-12 mx-auto">
-          <h1 className="text-center mb-10 lg:text-5xl md:text-4xl text-2xl text-black">
-            Hair Pricing
+          <h1
+            className="text-center mb-10 lg:text-5xl md:text-4xl text-2xl text-black"
+            data-aos="fade-up"
+          >
+            Hair
           </h1>
           <div className="flex flex-wrap -m-4">
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <div
+              className="lg:w-1/4 md:w-1/2 p-4 w-full"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
               <a className="block relative h-48 rounded overflow-hidden">
                 <img
-                  alt="ecommerce"
+                  alt="Hair Cutting"
                   className="object-cover object-center w-full h-full block"
-                  src="https://dummyimage.com/420x260"
+                  src={hairCutting}
                 />
               </a>
               <div className="mt-4">
                 <h2 className="text-gray-900 title-font text-lg font-medium">
-                  Bridal Package (3 days)
+                  Hair Cutting
                 </h2>
                 <h3 className="text-gray-500 text-md tracking-widest title-font mb-1">
-                  Mehndi, Barat, Valima
+                  Layer, Bob, Step
                 </h3>
                 <div className="flex items-center justify-between mt-2">
-                  <p className="text-black text-xl font-semibold">$850.00</p>
+                  <p className="text-black text-xl font-semibold">$300.00</p>
 
-                  <button className="px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-lg hover:bg-pink-700 transition">
+                  <button className="px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-lg hover:bg-transparent hover:text-pink-600 hover:border-2 hover:border-pink-600 transition">
                     Book Now
                   </button>
                 </div>
               </div>
             </div>
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <div
+              className="lg:w-1/4 md:w-1/2 p-4 w-full"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
               <a className="block relative h-48 rounded overflow-hidden">
                 <img
-                  alt="ecommerce"
+                  alt="Hair Style"
                   className="object-cover object-center w-full h-full block"
-                  src="https://dummyimage.com/421x261"
+                  src={hairStyle}
                 />
               </a>
               <div className="mt-4">
                 <h2 className="text-gray-900 title-font text-lg font-medium">
-                  Airbrush Makeup (1 day)
+                  Hair Style
                 </h2>
                 <h3 className="text-gray-500 text-md tracking-widest title-font mb-1">
-                  Any Event
+                  Any Style (Extra pay for fresh flower)
                 </h3>
                 <div className="flex items-center justify-between mt-2">
-                  <p className="text-black text-xl font-semibold">$850.00</p>
+                  <p className="text-black text-xl font-semibold">$180.00</p>
 
-                  <button className="px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-lg hover:bg-pink-700 transition">
+                  <button className="px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-lg hover:bg-transparent hover:text-pink-600 hover:border-2 hover:border-pink-600 transition">
                     Book Now
                   </button>
                 </div>
               </div>
             </div>
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <div
+              className="lg:w-1/4 md:w-1/2 p-4 w-full"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
               <a className="block relative h-48 rounded overflow-hidden">
                 <img
-                  alt="ecommerce"
+                  alt="Blow Dry"
                   className="object-cover object-center w-full h-full block"
-                  src="https://dummyimage.com/422x262"
+                  src={blowDry}
                 />
               </a>
               <div className="mt-4">
                 <h2 className="text-gray-900 title-font text-lg font-medium">
-                  Glam Makeup (1 day)
+                  Blow Dry
                 </h2>
                 <h3 className="text-gray-500 text-md tracking-widest title-font mb-1">
-                  Any Event
+                  On Advance Booking
                 </h3>
                 <div className="flex items-center justify-between mt-2">
-                  <p className="text-black text-xl font-semibold">$250.00</p>
-                  <button className="px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-lg hover:bg-pink-700 transition">
+                  <p className="text-black text-xl font-semibold">$300.00</p>
+                  <button className="px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-lg hover:bg-transparent hover:text-pink-600 hover:border-2 hover:border-pink-600 transition">
                     Book Now
                   </button>
                 </div>
               </div>
             </div>
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <div
+              className="lg:w-1/4 md:w-1/2 p-4 w-full"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
               <a className="block relative h-48 rounded overflow-hidden">
                 <img
-                  alt="ecommerce"
+                  alt="Hair Wash"
                   className="object-cover object-center w-full h-full block"
-                  src="https://dummyimage.com/423x263"
+                  src={hairWash}
                 />
               </a>
               <div className="mt-4">
                 <h2 className="text-gray-900 title-font text-lg font-medium">
-                  Makeup Trail Bridal 
+                  Hair Wash
                 </h2>
                 <h3 className="text-gray-500 text-md tracking-widest title-font mb-1">
-                  Mehndi, Barat, Valima (1 look)
+                  Small Length
                 </h3>
                 <div className="flex items-center justify-between mt-2">
-                  <p className="text-black text-xl font-semibold">$350.00</p>
+                  <p className="text-black text-xl font-semibold">$225.00</p>
 
-                  <button className="px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-lg hover:bg-pink-700 transition">
+                  <button className="px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-lg hover:bg-transparent hover:text-pink-600 hover:border-2 hover:border-pink-600 transition">
                     Book Now
                   </button>
                 </div>
               </div>
             </div>
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <div
+              className="lg:w-1/4 md:w-1/2 p-4 w-full"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
               <a className="block relative h-48 rounded overflow-hidden">
                 <img
-                  alt="ecommerce"
+                  alt="Hair Dying"
                   className="object-cover object-center w-full h-full block"
-                  src="https://dummyimage.com/424x264"
+                  src={hairDying}
                 />
               </a>
               <div className="mt-4">
                 <h2 className="text-gray-900 title-font text-lg font-medium">
-                  Party Makeup (1 day)
+                  Hair Dying
                 </h2>
                 <h3 className="text-gray-500 text-md tracking-widest title-font mb-1">
-                  Any Event
+                  Medium Length
                 </h3>
                 <div className="flex items-center justify-between mt-2">
-                  <p className="text-black text-xl font-semibold">$400.00</p>
+                  <p className="text-black text-xl font-semibold">$380.00</p>
 
-                  <button className="px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-lg hover:bg-pink-700 transition">
+                  <button className="px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-lg hover:bg-transparent hover:text-pink-600 hover:border-2 hover:border-pink-600 transition">
                     Book Now
                   </button>
                 </div>
               </div>
             </div>
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <div
+              className="lg:w-1/4 md:w-1/2 p-4 w-full"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
               <a className="block relative h-48 rounded overflow-hidden">
                 <img
-                  alt="ecommerce"
+                  alt="Highlights"
                   className="object-cover object-center w-full h-full block"
-                  src="https://dummyimage.com/425x265"
+                  src={highlights}
                 />
               </a>
               <div className="mt-4">
                 <h2 className="text-gray-900 title-font text-lg font-medium">
-                  Just Hairstyling
+                  Highlights
                 </h2>
                 <h3 className="text-gray-500 text-md tracking-widest title-font mb-1">
-                 Any look (Extra charge for flowers)
+                  Medium Length
                 </h3>
                 <div className="flex items-center justify-between mt-2">
-                  <p className="text-black text-xl font-semibold">$150.00</p>
+                  <p className="text-black text-xl font-semibold">$320.00</p>
 
-                  <button className="px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-lg hover:bg-pink-700 transition">
+                  <button className="px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-lg hover:bg-transparent hover:text-pink-600 hover:border-2 hover:border-pink-600 transition">
                     Book Now
                   </button>
                 </div>
               </div>
             </div>
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
-              <a className="block relative h-48 rounded overflow-hidden">
-                <img
-                  alt="ecommerce"
-                  className="object-cover object-center w-full h-full block"
-                  src="https://dummyimage.com/427x267"
-                />
-              </a>
-              <div className="mt-4">
-                <h2 className="text-gray-900 title-font text-lg font-medium">
-                  Soft Natural Makeup (1 day)
-                </h2>
-                <h3 className="text-gray-500 text-md tracking-widest title-font mb-1">
-                  Any Event 
-                </h3>
-                <div className="flex items-center justify-between mt-2">
-                  <p className="text-black text-xl font-semibold">$325.00</p>
-
-                  <button className="px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-lg hover:bg-pink-700 transition">
-                    Book Now
-                  </button>
-                </div>
-              </div>
-            </div>
-            
           </div>
         </div>
       </section>
       {/* HAIR PRICING SECTION END */}
+      {/* SKIN CARE PRICING SECTION START */}
+      <section className="text-gray-600 body-font bg-[#E89DAE]" id="services">
+        <div className="container px-5 py-12 mx-auto">
+          <h1
+            className="text-center mb-10 lg:text-5xl md:text-4xl text-2xl text-black"
+            data-aos="fade-up"
+          >
+            Skincare & Facial
+          </h1>
+          <div className="flex flex-wrap -m-4">
+            <div
+              className="lg:w-1/4 md:w-1/2 p-4 w-full"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <a className="block relative h-48 rounded overflow-hidden">
+                <img
+                  alt="Basic Facial"
+                  className="object-cover object-center w-full h-full block"
+                  src={basicfacial}
+                />
+              </a>
+              <div className="mt-4">
+                <h2 className="text-gray-900 title-font text-lg font-medium">
+                  Basic Facial
+                </h2>
+                <h3 className="text-gray-500 text-md tracking-widest title-font mb-1">
+                  Normal Skin type
+                </h3>
+                <div className="flex items-center justify-between mt-2">
+                  <p className="text-black text-xl font-semibold">$110.00</p>
+
+                  <button className="px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-lg hover:bg-transparent hover:text-pink-600 hover:border-2 hover:border-pink-600 transition">
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              className="lg:w-1/4 md:w-1/2 p-4 w-full"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <a className="block relative h-48 rounded overflow-hidden">
+                <img
+                  alt="Gold Facial"
+                  className="object-cover object-center w-full h-full block"
+                  src={goldFacial}
+                />
+              </a>
+              <div className="mt-4">
+                <h2 className="text-gray-900 title-font text-lg font-medium">
+                  Gold Facial
+                </h2>
+                <h3 className="text-gray-500 text-md tracking-widest title-font mb-1">
+                  All skin type
+                </h3>
+                <div className="flex items-center justify-between mt-2">
+                  <p className="text-black text-xl font-semibold">$130.00</p>
+
+                  <button className="px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-lg hover:bg-transparent hover:text-pink-600 hover:border-2 hover:border-pink-600 transition">
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              className="lg:w-1/4 md:w-1/2 p-4 w-full"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <a className="block relative h-48 rounded overflow-hidden">
+                <img
+                  alt="Diamond Facial"
+                  className="object-cover object-center w-full h-full block"
+                  src={diamondFacial}
+                />
+              </a>
+              <div className="mt-4">
+                <h2 className="text-gray-900 title-font text-lg font-medium">
+                  Diamond Facial & Pearl Facial
+                </h2>
+                <h3 className="text-gray-500 text-md tracking-widest title-font mb-1">
+                  on Advance Booking
+                </h3>
+                <div className="flex items-center justify-between mt-2">
+                  <p className="text-black text-xl font-semibold">$310.00</p>
+                  <button className="px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-lg hover:bg-transparent hover:text-pink-600 hover:border-2 hover:border-pink-600 transition">
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              className="lg:w-1/4 md:w-1/2 p-4 w-full"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <a className="block relative h-48 rounded overflow-hidden">
+                <img
+                  alt="Hydra Facial"
+                  className="object-cover object-center w-full h-full block"
+                  src={hydraFacial}
+                />
+              </a>
+              <div className="mt-4">
+                <h2 className="text-gray-900 title-font text-lg font-medium">
+                  Hydra Facial
+                </h2>
+                <h3 className="text-gray-500 text-md tracking-widest title-font mb-1">
+                  on Advanvce Booking
+                </h3>
+                <div className="flex items-center justify-between mt-2">
+                  <p className="text-black text-xl font-semibold">$500.00</p>
+
+                  <button className="px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-lg hover:bg-transparent hover:text-pink-600 hover:border-2 hover:border-pink-600 transition">
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              className="lg:w-1/4 md:w-1/2 p-4 w-full"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <a className="block relative h-48 rounded overflow-hidden">
+                <img
+                  alt="Acne Treatment"
+                  className="object-cover object-center w-full h-full block"
+                  src={acneTreatment}
+                />
+              </a>
+              <div className="mt-4">
+                <h2 className="text-gray-900 title-font text-lg font-medium">
+                  Acne Treatment
+                </h2>
+                <h3 className="text-gray-500 text-md tracking-widest title-font mb-1">
+                  on Advance Booking
+                </h3>
+                <div className="flex items-center justify-between mt-2">
+                  <p className="text-black text-xl font-semibold">
+                    $450.00 <small>per session</small>
+                  </p>
+
+                  <button className="px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-lg hover:bg-transparent hover:text-pink-600 hover:border-2 hover:border-pink-600 transition">
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              className="lg:w-1/4 md:w-1/2 p-4 w-full"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <a className="block relative h-48 rounded overflow-hidden">
+                <img
+                  alt="Under Eye Treatment"
+                  className="object-cover object-center w-full h-full block"
+                  src={undereyeTreatment}
+                />
+              </a>
+              <div className="mt-4">
+                <h2 className="text-gray-900 title-font text-lg font-medium">
+                  Under Eye Treatment
+                </h2>
+                <h3 className="text-gray-500 text-md tracking-widest title-font mb-1">
+                  on Advance Booking
+                </h3>
+                <div className="flex items-center justify-between mt-2">
+                  <p className="text-black text-xl font-semibold">$550.00</p>
+
+                  <button className="px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-lg hover:bg-transparent hover:text-pink-600 hover:border-2 hover:border-pink-600 transition">
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* SKIN CARE PRICING SECTION END */}
+      {/* HAIR PRICING SECTION START */}
+      <section className="text-gray-600 body-font ">
+        <div className="container px-5 py-12 mx-auto">
+          <h1
+            className="text-center mb-10 lg:text-5xl md:text-4xl text-2xl text-black"
+            data-aos="fade-up"
+          >
+            Hand & Feet Caring
+          </h1>
+          <div className="flex flex-wrap -m-4">
+            <div
+              className="lg:w-1/4 md:w-1/2 p-4 w-full"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <a className="block relative h-48 rounded overflow-hidden">
+                <img
+                  alt="Meni Pedi"
+                  className="object-cover object-center w-full h-full block"
+                  src={meniPedi}
+                />
+              </a>
+              <div className="mt-4">
+                <h2 className="text-gray-900 title-font text-lg font-medium">
+                  Menicure & Pedicure
+                </h2>
+                <h3 className="text-gray-500 text-md tracking-widest title-font mb-1">
+                  on Advance Booking
+                </h3>
+                <div className="flex items-center justify-between mt-2">
+                  <p className="text-black text-xl font-semibold">$245.00</p>
+
+                  <button className="px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-lg hover:bg-transparent hover:text-pink-600 hover:border-2 hover:border-pink-600 transition">
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              className="lg:w-1/4 md:w-1/2 p-4 w-full"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <a className="block relative h-48 rounded overflow-hidden">
+                <img
+                  alt="Nail Cutting & Shapping"
+                  className="object-cover object-center w-full h-full block"
+                  src={nailShaping}
+                />
+              </a>
+              <div className="mt-4">
+                <h2 className="text-gray-900 title-font text-lg font-medium">
+                  Nail Cutting & Shapping
+                </h2>
+                <h3 className="text-gray-500 text-md tracking-widest title-font mb-1">
+                  Any Shape
+                </h3>
+                <div className="flex items-center justify-between mt-2">
+                  <p className="text-black text-xl font-semibold">$80.00</p>
+
+                  <button className="px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-lg hover:bg-transparent hover:text-pink-600 hover:border-2 hover:border-pink-600 transition">
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              className="lg:w-1/4 md:w-1/2 p-4 w-full"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <a className="block relative h-48 rounded overflow-hidden">
+                <img
+                  alt="Nail Art"
+                  className="object-cover object-center w-full h-full block"
+                  src={nailArt}
+                />
+              </a>
+              <div className="mt-4">
+                <h2 className="text-gray-900 title-font text-lg font-medium">
+                  Nail Art
+                </h2>
+                <h3 className="text-gray-500 text-md tracking-widest title-font mb-1">
+                  Any Art or design
+                </h3>
+                <div className="flex items-center justify-between mt-2">
+                  <p className="text-black text-xl font-semibold">$140.00</p>
+                  <button className="px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-lg hover:bg-transparent hover:text-pink-600 hover:border-2 hover:border-pink-600 transition">
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* HAIR PRICING SECTION END */}
+      {/* WAXING PRICING SECTION START */}
+      <section className="text-gray-600 body-font bg-[#E89DAE]" id="services">
+        <div className="container px-5 py-12 mx-auto">
+          <h1
+            className="text-center mb-10 lg:text-5xl md:text-4xl text-2xl text-black"
+            data-aos="fade-up"
+          >
+            Waxing
+          </h1>
+          <div className="flex flex-wrap -m-4">
+            <div
+              className="lg:w-1/4 md:w-1/2 p-4 w-full"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <a className="block relative h-48 rounded overflow-hidden">
+                <img
+                  alt="Full Body Wax"
+                  className="object-cover object-center w-full h-full block"
+                  src={fullBodyWax}
+                />
+              </a>
+              <div className="mt-4">
+                <h2 className="text-gray-900 title-font text-lg font-medium">
+                  Full Body Wax
+                </h2>
+                <h3 className="text-gray-500 text-md tracking-widest title-font mb-1">
+                  on Advance Booking
+                </h3>
+                <div className="flex items-center justify-between mt-2">
+                  <p className="text-black text-xl font-semibold">$500.00</p>
+
+                  <button className="px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-lg hover:bg-transparent hover:text-pink-600 hover:border-2 hover:border-pink-600 transition">
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              className="lg:w-1/4 md:w-1/2 p-4 w-full"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <a className="block relative h-48 rounded overflow-hidden">
+                <img
+                  alt="Arm & Leg Wax"
+                  className="object-cover object-center w-full h-full block"
+                  src={armWax}
+                />
+              </a>
+              <div className="mt-4">
+                <h2 className="text-gray-900 title-font text-lg font-medium">
+                  Arm & Leg Wax
+                </h2>
+                <h3 className="text-gray-500 text-md tracking-widest title-font mb-1">
+                  Hot wax
+                </h3>
+                <div className="flex items-center justify-between mt-2">
+                  <p className="text-black text-xl font-semibold">$90.00</p>
+
+                  <button className="px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-lg hover:bg-transparent hover:text-pink-600 hover:border-2 hover:border-pink-600 transition">
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              className="lg:w-1/4 md:w-1/2 p-4 w-full"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <a className="block relative h-48 rounded overflow-hidden">
+                <img
+                  alt="Face Wax"
+                  className="object-cover object-center w-full h-full block"
+                  src={faceWax}
+                />
+              </a>
+              <div className="mt-4">
+                <h2 className="text-gray-900 title-font text-lg font-medium">
+                  Face Wax
+                </h2>
+                <h3 className="text-gray-500 text-md tracking-widest title-font mb-1">
+                  Hot wax
+                </h3>
+                <div className="flex items-center justify-between mt-2">
+                  <p className="text-black text-xl font-semibold">$60.00</p>
+                  <button className="px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-lg hover:bg-transparent hover:text-pink-600 hover:border-2 hover:border-pink-600 transition">
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              className="lg:w-1/4 md:w-1/2 p-4 w-full"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <a className="block relative h-48 rounded overflow-hidden">
+                <img
+                  alt="Threading"
+                  className="object-cover object-center w-full h-full block"
+                  src={threading}
+                />
+              </a>
+              <div className="mt-4">
+                <h2 className="text-gray-900 title-font text-lg font-medium">
+                  threading
+                </h2>
+                <h3 className="text-gray-500 text-md tracking-widest title-font mb-1">
+                  For Sensitive Skin
+                </h3>
+                <div className="flex items-center justify-between mt-2">
+                  <p className="text-black text-xl font-semibold">$60.00</p>
+
+                  <button className="px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-lg hover:bg-transparent hover:text-pink-600 hover:border-2 hover:border-pink-600 transition">
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* WAXING PRICING SECTION END */}
+      {/* CONTACT SECTION START */}
+      <section className=" body-font relative">
+        <div className="container px-5 py-24 mx-auto">
+          <div className="flex flex-col text-center w-full mb-12">
+            <h1
+              className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900"
+              data-aos="fade-up"
+            >
+              Contact Us
+            </h1>
+          </div>
+
+          <div className="lg:w-1/2 md:w-2/3 mx-auto">
+            <div className="flex flex-wrap -m-2">
+              <div className="p-2 w-1/2">
+                <div className="relative">
+                  <label
+                    htmlFor="name"
+                    className="leading-7 text-sm text-gray-600"
+                  >
+                    Name
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter Your Good Name"
+                    name="name"
+                    className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-[#E89DAE] focus:bg-white focus:ring-2 focus:ring-pink-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  />
+                </div>
+              </div>
+
+              <div className="p-2 w-1/2">
+                <div className="relative">
+                  <label
+                    htmlFor="email"
+                    className="leading-7 text-sm text-gray-600"
+                  >
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter Ypur Email"
+                    name="email"
+                    className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-[#E89DAE] focus:bg-white focus:ring-2 focus:ring-pink-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  />
+                </div>
+              </div>
+              <div className="p-2 w-1/2">
+                <div className="relative">
+                  <label
+                    htmlFor="name"
+                    className="leading-7 text-sm text-gray-600"
+                  >
+                    Contact no
+                  </label>
+                  <input
+                    type="number"
+                    id="name"
+                    placeholder="Contact no"
+                    name="name"
+                    className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-[#E89DAE] focus:bg-white focus:ring-2 focus:ring-pink-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  />
+                </div>
+              </div>
+
+              <div className="p-2 w-1/2">
+                <div className="relative">
+                  <label
+                    htmlFor="email"
+                    className="leading-7 text-sm text-gray-600"
+                  >
+                    Service You Choose
+                  </label>
+                  <input
+                    type="text"
+                    id="email"
+                    placeholder="Service You Choose"
+                    name="email"
+                    className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-[#E89DAE] focus:bg-white focus:ring-2 focus:ring-pink-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  />
+                </div>
+              </div>
+
+              <div className="p-2 w-full">
+                <div className="relative">
+                  <label
+                    htmlFor="message"
+                    className="leading-7 text-sm text-gray-600"
+                  >
+                    Message
+                  </label>
+                  <textarea
+                    id="message"
+                    placeholder="Enter Your Message or Feedback"
+                    name="message"
+                    className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-[#E89DAE] focus:bg-white focus:ring-2 focus:ring-pink-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                  />
+                </div>
+              </div>
+
+              <div className="p-2 w-full">
+                <button className="flex mx-auto py-2 px-8 text-white bg-pink-600 rounded-lg hover:bg-transparent hover:text-pink-600 hover:border-2 hover:border-pink-600">
+                  Submit
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* CONTACT SECTION END */}
+      {/* FOOTER START */}
+      <footer className="bg-pink-200/30 backdrop-blur-md border-t border-white/30 shadow-2xl text-black">
+        <div className="max-w-7xl mx-auto px-6 py-12">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            {/* Brand */}
+            <div>
+              <h2 className="text-2xl font-semibold logo mb-3">Aura Belle</h2>
+              <p className="text-sm text-gray-700 leading-relaxed">
+                Premium beauty salon offering professional makeup, hair styling,
+                skincare, and bridal services with elegance and care.
+              </p>
+            </div>
+
+            {/* Services */}
+            <div>
+              <h3 className="text-lg font-medium mb-3">Services</h3>
+              <ul className="space-y-2 text-sm">
+                <li className="cursor-pointer hover:text-pink-600">Makeup</li>
+                <li className="cursor-pointer hover:text-pink-600">
+                  Hair Styling
+                </li>
+                <li className="cursor-pointer hover:text-pink-600">
+                  Skincare & Facial
+                </li>
+                <li className="cursor-pointer hover:text-pink-600">
+                  Hand & Feet
+                </li>
+                <li className="cursor-pointer hover:text-pink-600">Waxing</li>
+              </ul>
+            </div>
+
+            {/* Quick Links */}
+            <div>
+              <h3 className="text-lg font-medium mb-3">Quick Links</h3>
+              <ul className="space-y-2 text-sm">
+                <li className="cursor-pointer hover:text-pink-600">Home</li>
+                <li className="cursor-pointer hover:text-pink-600">Services</li>
+                <li className="cursor-pointer hover:text-pink-600">Makeup</li>
+                <li className="cursor-pointer hover:text-pink-600">Contact</li>
+              </ul>
+            </div>
+
+            {/* Contact */}
+            <div>
+              <h3 className="text-lg font-medium mb-3">Contact</h3>
+              <p className="text-sm text-gray-700 hover:text-pink-600 cursor-pointer">
+                Karachi, Pakistan
+              </p>
+              <p className="text-sm text-gray-700 hover:text-pink-600 mt-1 cursor-pointer">
+                +92 300 1234567
+              </p>
+              <p className="text-sm text-gray-700 hover:text-pink-600 mt-1 cursor-pointer">
+                aurabelle@gmail.com
+              </p>
+            </div>
+          </div>
+
+          {/* Bottom Bar */}
+          <div className="border-t border-white/30 mt-10 pt-6 flex flex-col md:flex-row items-center justify-between text-sm text-gray-700">
+            <p>© 2026 Aura Belle. All rights reserved.</p>
+
+            <div className="flex space-x-4 mt-4 md:mt-0">
+              Developed by{" "}
+              <span>
+                <b> AEIMAN FAYYAZ</b>
+              </span>
+            </div>
+          </div>
+        </div>
+      </footer>
+      {/* FOOTER END */}
     </>
   );
 }
