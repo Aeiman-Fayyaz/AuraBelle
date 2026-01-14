@@ -86,7 +86,7 @@ export default function App() {
               <span className="sr-only">Search</span>
             </button>
             <label htmlFor="input-group-1" className="sr-only">
-              Your Email
+              Search
             </label>
             <div className="relative hidden md:block">
               <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
@@ -182,7 +182,7 @@ export default function App() {
               </li>
               <li>
                 <a
-                  href="services"
+                  href="#services"
                   className="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent hover:border-b"
                 >
                   Services
@@ -190,7 +190,7 @@ export default function App() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#makeup"
                   className="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent hover:border-b"
                 >
                   Makeup
@@ -198,7 +198,7 @@ export default function App() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#hair"
                   className="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent hover:border-b"
                 >
                   Hair
@@ -206,7 +206,7 @@ export default function App() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#skin"
                   className="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent hover:border-b"
                 >
                   Skincare & Facial
@@ -214,7 +214,7 @@ export default function App() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#hand"
                   className="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent hover:border-b"
                 >
                   Hand & Feet
@@ -222,7 +222,7 @@ export default function App() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#waxing"
                   className="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent hover:border-b"
                 >
                   Waxing
@@ -230,7 +230,7 @@ export default function App() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#contact"
                   className="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent hover:border-b"
                 >
                   Contact
@@ -242,7 +242,10 @@ export default function App() {
       </nav>
       {/* NAVBAR END */}
       {/* HERO BANNER START */}
-      <div className="relative w-full min-h-\[300px\] md\:min-h-\[500px\] md:pt-5 pt-18 flex items-center justify-center">
+      <div
+        className="relative w-full min-h-\[300px\] md\:min-h-\[500px\] md:pt-5 pt-18 flex items-center justify-center"
+        id="home"
+      >
         <img
           src={heroBanner}
           alt="Banner"
@@ -251,7 +254,7 @@ export default function App() {
       </div>
       {/* HERO BANNER END */}
       {/* SERVICES SECTION START */}
-      <section className="text-gray-600 body-font">
+      <section className="text-gray-600 body-font" id="services">
         <div className="container px-5 py-24 mx-auto">
           <div
             className="flex flex-col text-center w-full mb-20"
@@ -405,7 +408,7 @@ export default function App() {
       </section>
       {/* SERVICES SECTION END */}
       {/* MAKEUP PRICING SECTION START */}
-      <section className="text-gray-600 body-font bg-[#E89DAE]" id="services">
+      <section className="text-gray-600 body-font bg-[#E89DAE]" id="makeup">
         <div className="container px-5 py-12 mx-auto">
           <h1
             className="text-center mb-10 lg:text-5xl md:text-4xl text-2xl text-black"
@@ -614,7 +617,7 @@ export default function App() {
       </section>
       {/* MAKEUP PRICING SECTION END */}
       {/* HAIR PRICING SECTION START */}
-      <section className="text-gray-600 body-font ">
+      <section className="text-gray-600 body-font" id="hair">
         <div className="container px-5 py-12 mx-auto">
           <h1
             className="text-center mb-10 lg:text-5xl md:text-4xl text-2xl text-black"
@@ -795,7 +798,7 @@ export default function App() {
       </section>
       {/* HAIR PRICING SECTION END */}
       {/* SKIN CARE PRICING SECTION START */}
-      <section className="text-gray-600 body-font bg-[#E89DAE]" id="services">
+      <section className="text-gray-600 body-font bg-[#E89DAE]" id="skin">
         <div className="container px-5 py-12 mx-auto">
           <h1
             className="text-center mb-10 lg:text-5xl md:text-4xl text-2xl text-black"
@@ -977,8 +980,8 @@ export default function App() {
         </div>
       </section>
       {/* SKIN CARE PRICING SECTION END */}
-      {/* HAIR PRICING SECTION START */}
-      <section className="text-gray-600 body-font ">
+      {/* HAND & FEEt PRICING SECTION START */}
+      <section className="text-gray-600 body-font" id="hand">
         <div className="container px-5 py-12 mx-auto">
           <h1
             className="text-center mb-10 lg:text-5xl md:text-4xl text-2xl text-black"
@@ -1075,7 +1078,7 @@ export default function App() {
       </section>
       {/* HAIR PRICING SECTION END */}
       {/* WAXING PRICING SECTION START */}
-      <section className="text-gray-600 body-font bg-[#E89DAE]" id="services">
+      <section className="text-gray-600 body-font bg-[#E89DAE]" id="waxing">
         <div className="container px-5 py-12 mx-auto">
           <h1
             className="text-center mb-10 lg:text-5xl md:text-4xl text-2xl text-black"
@@ -1200,7 +1203,7 @@ export default function App() {
       </section>
       {/* WAXING PRICING SECTION END */}
       {/* CONTACT SECTION START */}
-      <section className=" body-font relative">
+      <section className=" body-font relative" id="contact">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-col text-center w-full mb-12">
             <h1
@@ -1328,17 +1331,31 @@ export default function App() {
             <div>
               <h3 className="text-lg font-medium mb-3">Services</h3>
               <ul className="space-y-2 text-sm">
-                <li className="cursor-pointer hover:text-pink-600">Makeup</li>
-                <li className="cursor-pointer hover:text-pink-600">
-                  Hair Styling
-                </li>
-                <li className="cursor-pointer hover:text-pink-600">
-                  Skincare & Facial
-                </li>
-                <li className="cursor-pointer hover:text-pink-600">
-                  Hand & Feet
-                </li>
-                <li className="cursor-pointer hover:text-pink-600">Waxing</li>
+                <a href="#makeup ">
+                  <li className="cursor-pointer hover:text-pink-600 mb-2">
+                    Makeup
+                  </li>
+                </a>
+                <a href="#hair">
+                  <li className="cursor-pointer hover:text-pink-600 mb-2">
+                    Hair Styling
+                  </li>
+                </a>
+                <a href="#skin">
+                  <li className="cursor-pointer hover:text-pink-600 mb-2">
+                    Skincare & Facial
+                  </li>
+                </a>
+                <a href="#hand">
+                  <li className="cursor-pointer hover:text-pink-600 mb-2">
+                    Hand & Feet
+                  </li>
+                </a>
+                <a href="#waxing">
+                  <li className="cursor-pointer hover:text-pink-600 mb-2">
+                    Waxing
+                  </li>
+                </a>
               </ul>
             </div>
 
@@ -1346,10 +1363,26 @@ export default function App() {
             <div>
               <h3 className="text-lg font-medium mb-3">Quick Links</h3>
               <ul className="space-y-2 text-sm">
-                <li className="cursor-pointer hover:text-pink-600">Home</li>
-                <li className="cursor-pointer hover:text-pink-600">Services</li>
-                <li className="cursor-pointer hover:text-pink-600">Makeup</li>
-                <li className="cursor-pointer hover:text-pink-600">Contact</li>
+                <a href="#home">
+                  <li className="cursor-pointer hover:text-pink-600 mb-2">
+                    Home
+                  </li>
+                </a>
+                <a href="#services">
+                  <li className="cursor-pointer hover:text-pink-600 mb-2">
+                    Services
+                  </li>
+                </a>
+                <a href="#makeup">
+                  <li className="cursor-pointer hover:text-pink-600 mb-2">
+                    Makeup
+                  </li>
+                </a>
+                <a href="#contact">
+                  <li className="cursor-pointer hover:text-pink-600 mb-2">
+                    Contact
+                  </li>
+                </a>
               </ul>
             </div>
 
